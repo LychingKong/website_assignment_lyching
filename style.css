@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #f4f4e4;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  background: #f4f4e4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  height: 100px;
+}
+nav .logo img {
+  width: 80px;
+  cursor: pointer;
+  margin: 7px 0;
+  border-radius: 50%;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.1s;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: dodgerblue;
+  display: block;
+  transition: 0.2s linear;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+nav ul li a:hover {
+  color: dodgerblue;
+}
+nav .icon i {
+  font-size: 18px;
+  color: #000;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3;
+}
+nav .icon i:hover {
+  color: dodgerblue;
+}
+
+/* About us */
+.about-us img {
+  width: 500px;
+  height: 500px;
+  border-radius: 5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* Grid Gallery */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* video */
+.video-container {
+  position: relative;
+  left: 25%;
+}
+.button-gallery {
+  position: relative;
+  left: 20%;
+  border: none;
+  background-color: dodgerblue;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.button-gallery:hover {
+  background-color: #4caf50;
+}
+/* Our Location */
+.location img {
+  width: 500px;
+  height: 500px;
+  border-radius: 5%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  position: relative;
+  left: 30px;
+}
+.location .button-location {
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 250px;
+  padding: 24px 34px;
+  background-color: dodgerblue;
+  color: #fff;
+  border: none;
+  border-radius: 8%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.button-location:hover {
+  background-color: #4caf50;
+}
+/* FOOTER */
+footer {
+  background-color: dodgerblue;
+}
+footer p {
+  font-size: 20px;
+  color: white;
+}
+i {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3;
+}
+i:hover {
+  color: rgb(193, 188, 188);
+}
+/* menu.html */
+.menu h1 {
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+.menu h1 span {
+  color: dodgerblue;
+  margin-left: 15px;
+  font-family: mv boli;
+  max-width: 100%;
+}
+.menu h1 span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: dodgerblue;
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+img.menu-1 {
+  height: 800px;
+  width: 1500px;
+}
+img.menu-2 {
+  height: 800px;
+  width: 1500px;
+}
+/* ourlocation.html */
+
+.location {
+  width: 100%;
+  padding: 70px 0;
+}
+.location h1 {
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+.location h1 span {
+  color: dodgerblue;
+  margin-left: 15px;
+  font-family: mv boli;
+  max-width: 100%;
+}
+.location h1 span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: dodgerblue;
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+.location .location_box {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.location .location_box .location_card {
+  width: 325px;
+  height: 375px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px wheat;
+  background-color: white;
+}
+.location .location_box .location_card .location_image {
+  width: 300px;
+  height: 245px;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.location .location_box .location_card .location_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+.location .location_box .location_card .location_image:hover img {
+  transform: scale(1.1);
+}
+.location .location_box .location_card .location_info h2 {
+  width: 70%;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  font-size: 15px;
+  color: black;
+  font-family: arial;
+}
+.location .location_box .location_card .location_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: Arial;
+  color: #f4f4e4;
+  background: dodgerblue;
+  padding: 8px 10px;
+  margin: 0 80px;
+  transition: 0.3s;
+  border-radius: 10%;
+}
+.location .location_box .location_card .location_button:hover {
+  transform: scale(1.1);
+}
+
+/* contactus.html */
+
+.contact {
+  min-height: 100vh;
+  padding: 50px;
+  text-align: center;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.container h2 {
+  color: black;
+  font-size: 40px;
+  font-family: mv boli;
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+.contact-form {
+  text-align: left;
+  position: absolute;
+  left: 25%;
+}
+.contact-form h3 {
+  color: dodgerblue;
+}
+input {
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+textarea {
+  width: 500px;
+  max-width: 800px;
+  height: 100px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.button-submit {
+  display: inline-block;
+  margin-left: 0px;
+  padding: 12px 24px;
+  background-color: dodgerblue;
+  color: #fff;
+  border: none;
+  border-radius: 8%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  background-color: #4caf50;
+}
